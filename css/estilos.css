@@ -11,7 +11,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-family: 'Roboto', sans-serif;
   font-size: large;
-  background-color: #f3fad7;
+  background-color: #d1d1d1;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -25,13 +25,13 @@ body footer {
   box-sizing: border-box;
   padding: 10px;
   margin-top: auto;
-  background-color: #2d530a;
+  background-color: #141414;
 }
 
 body footer .text-muted {
   --bs-text-opacity: 1;
   font-size: small;
-  color: beige !important;
+  color: #ff0505 !important;
 }
 
 body footer .border-top {
@@ -39,12 +39,12 @@ body footer .border-top {
 }
 
 body footer .bi, body footer .bi-instagram {
-  font-size: large;
+  font-size: medium;
 }
 
 /* NavBar */
 header {
-  background-color: #2d530a;
+  background-color: #141414;
   font-size: large !important;
   padding: 10px;
   display: block;
@@ -73,34 +73,83 @@ header li {
 
 header a {
   text-decoration: none;
-  color: beige;
+  color: #ff0505;
 }
 
 header a:hover {
-  color: #16c56e;
+  color: #f7c4c4;
 }
 
 header .nav-item {
   flex-wrap: wrap;
   text-decoration: none;
-  color: beige;
+  color: #ff0505;
 }
 
 header .nav-link {
   display: inline;
-  color: beige;
+  color: #ff0505;
 }
 
 header .nav-link:hover {
-  color: #16c56e;
+  color: #f7c4c4;
 }
 
 header .dropdown-menu {
-  --bs-dropdown-bg: $color !important;
+  --bs-dropdown-bg: /* CALENDARIO */
+
+// ol {
+//   list-style: none;
+//   display: grid;
+//   grid-template-columns: repeat(7, 1fr);
+// }
+
+// .first-day {
+//   grid-column-start: 5;
+// }
+
+// .day-name {
+//   font-weight: bold;
+//   font-size: 12px;
+//   text-align: center;
+//   margin-bottom: 2px;
+//   padding: 4px;
+// }
+
+/* CALENDARIO TABLA */
+
+.titulo {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 2px;
+  padding: 4px;
+}
+
+.cuerpo {
+  border: #000000 solid 1px;
+  text-decoration: none;
+  text-align: center;
+  /* width: 19%; */
+  /* min-height: 100vh; */
+  
+
+}
+
+/* .table {
+  overflow-x: auto;
+} */
+
+a {
+  text-decoration: none;
+  color: #000000;
+  
+}
+a:hover !important;
 }
 
 header .offcanvas {
-  background-color: #2d530a;
+  background-color: #141414;
   color: beige;
 }
 
@@ -122,6 +171,50 @@ section .botones {
   width: 50%;
 }
 
-section table, section th, section tr, section td {
+section .border {
   border: none;
+}
+
+/* CALENDARIO */
+ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.first-day {
+  grid-column-start: 5;
+}
+
+.day-name {
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 2px;
+  padding: 4px;
+}
+
+/* CALENDARIO TABLA */
+section table, section th, section tr, section td {
+  border: #810000 solid 2px;
+  text-decoration: none;
+  text-align: center;
+  color: #810000;
+}
+
+section h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 2px;
+  padding: 4px;
+  color: #810000;
+}
+
+section a {
+  text-decoration: none;
+  color: #810000;
+}
+
+section a:hover {
+  color: #ff0505;
 }

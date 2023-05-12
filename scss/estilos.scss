@@ -1,9 +1,10 @@
 //Variables
 
-$color-titulos:  rgb(8, 37, 22);
-$color-fondo: rgb(243, 250, 215);
-$color: rgb(45, 83, 10);
-$color-hover: rgb(22, 197, 110);
+$color-titulos:  rgb(255, 5, 5);
+$color-tabla:rgb(129, 0, 0);
+$color-fondo: rgb(209, 209, 209);
+$color: #141414;
+$color-hover: rgb(247, 196, 196);
 
 /* Reset */
 * {
@@ -37,7 +38,7 @@ body {
         .text-muted {
             --bs-text-opacity: 1;
             font-size: small;
-            color: beige !important;
+            color: $color-titulos !important;
         }
 
         .border-top {
@@ -93,7 +94,7 @@ header {
 
     a {
         text-decoration: none;
-        color: beige;
+        color: $color-titulos;
 
         &:hover {
             color: $color-hover;
@@ -103,12 +104,12 @@ header {
     .nav-item {
         flex-wrap: wrap;
         text-decoration: none;
-        color: beige;
+        color: $color-titulos;
     }
 
     .nav-link {
         display: inline;
-        color: beige;
+        color: $color-titulos;
 
         &:hover {
             color: $color-hover;
@@ -116,7 +117,56 @@ header {
     }
 
     .dropdown-menu {
-        --bs-dropdown-bg: $color !important;
+        --bs-dropdown-bg: /* CALENDARIO */
+
+// ol {
+//   list-style: none;
+//   display: grid;
+//   grid-template-columns: repeat(7, 1fr);
+// }
+
+// .first-day {
+//   grid-column-start: 5;
+// }
+
+// .day-name {
+//   font-weight: bold;
+//   font-size: 12px;
+//   text-align: center;
+//   margin-bottom: 2px;
+//   padding: 4px;
+// }
+
+/* CALENDARIO TABLA */
+
+.titulo {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 2px;
+  padding: 4px;
+}
+
+.cuerpo {
+  border: #000000 solid 1px;
+  text-decoration: none;
+  text-align: center;
+  /* width: 19%; */
+  /* min-height: 100vh; */
+  
+
+}
+
+/* .table {
+  overflow-x: auto;
+} */
+
+a {
+  text-decoration: none;
+  color: #000000;
+  
+}
+a:hover !important;
     }
 
     .offcanvas {
@@ -150,8 +200,63 @@ section {
 
     }
 
-    table, th, tr, td {
+    .border {
         border: none;
     }
 
 }
+
+
+
+/* CALENDARIO */
+
+ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .first-day {
+    grid-column-start: 5;
+  }
+  
+  .day-name {
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 2px;
+    padding: 4px;
+  }
+  
+  /* CALENDARIO TABLA */ 
+  
+  section {
+
+    table, th, tr, td {
+        border: $color-tabla solid 2px;
+        text-decoration: none;
+        text-align: center;
+        color: $color-tabla;
+
+    }
+    h1 {
+        // font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 2px;
+        padding: 4px;
+        color: $color-tabla;
+
+    }
+    a {
+        text-decoration: none;
+        color: $color-tabla;
+    
+        &:hover {
+            color: $color-titulos;
+        }
+    }
+
+  }
+
+
